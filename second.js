@@ -3061,9 +3061,14 @@
     };
     function oe(a) {
         var b = a.Sa.mode == "stable" ? "": a.Sa.mode + "/";
-        a.df = "http://cdn.sublimevideo.net/p/" + b + "sublime.swf?t=" + a.ia;
-        a.qc = "http://cdn.sublimevideo.net/p/" + b + "play_button.png?t=" + a.ia;
-        a.cf = "http://cdn.sublimevideo.net/p/" + b + "sublime_css.js?t=" + a.ia
+		console.log('wtf b? ' + b);
+		console.log('wtf a.ia? ' + a.ia);
+        a.df = "sublime.swf?t=" + a.ia;
+        a.qc = "play_button.png?t=" + a.ia;
+        a.cf = "sublime_css.js?t=" + a.ia
+		console.log('urls: ' + a.df);
+		console.log('urls: ' + a.qc);
+		console.log('urls: ' + a.cf);
     }
     function ne(a) {
         if (!a.Od) {
